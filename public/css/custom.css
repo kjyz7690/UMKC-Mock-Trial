@@ -7,10 +7,25 @@
 .jumbotron a {
     font-size: 18px;
 }
+.large-header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FCEB55;
+    background-image: url("../images/gavel.png");
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.large-header a {
+    color: #FCEB55;
+}
+.large-header a:hover {
+    text-decoration: none;
+}
 .navbar-default .navbar-brand {
     font-size: 25px;
+    font-weight: 400;
     text-shadow: none;
-    padding: 18px;
+    padding: 15px;
 }
 .navbar-default {
     background-color: #269abc;
@@ -34,6 +49,10 @@
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
      background-color: #269abc;
  }
+.navbar-default .navbar-brand {
+     color: #FCEB55;
+     visibility: hidden;
+}
 .btn-primary {
     background-color: #269abc;
     border-color: #269abc;
@@ -41,6 +60,18 @@
 .btn-primary:hover {
     background-color: #26addd;
     border-color: #269abc;
+}
+/* Footer */
+footer {
+    padding: 20px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+footer p:last-child {
+    margin-bottom: 0;
 }
 @media (max-width: 1350px) {
 }
@@ -55,5 +86,17 @@
     }
     .jumbotron a {
         font-size: 16px;
+    }
+    .large-header {
+        visibility: hidden;
+        height: 0px;
+        padding: 0px;
+    }
+    .large-header a {
+        visiblity: hidden;
+    }
+    .navbar-default .navbar-brand {
+        color: #FCEB55;
+        visibility: visible;
     }
 }

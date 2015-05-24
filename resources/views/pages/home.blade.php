@@ -1,7 +1,7 @@
 @extends('app')
 @section('content')
     <div class="jumbotron">
-        <h1>Interested In Joining?</h1>
+        <h2>Interested In Joining?</h2>
         <p>We are currently looking for dedicated mockers for our 2015-2016 season.</p>
         <p>Want to join but don't have any experience? No Problem! Everything you need to know will
             be taught to you by the coaches before the first competition.</p>

@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-	<h1>Join</h1>
+	<h2>Join</h2>
     <p>We are excited that you are interested in trying out for the UMKC Mock Trial team! Please enter your contact
     information below and a current member will get in contact with you with shortly.</p>
     <form>

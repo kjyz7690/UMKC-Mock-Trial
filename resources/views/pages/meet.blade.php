@@ -1,5 +1,8 @@
 @extends('app')
 
 @section('content')
-    <h1>Meet the Team</h1>
+    <h2>Meet the Team</h2>
+    @foreach($team as $member )
+    {{ $member->first_name }}
+    @endforeach
 @stop

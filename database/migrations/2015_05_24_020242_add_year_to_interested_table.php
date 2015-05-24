@@ -12,10 +12,10 @@ class AddYearToInterestedTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('interested', function(Blueprint $table)
-		{
+        Schema::table('interested', function(Blueprint $table)
+        {
             $table->string('year');
-		});
+        });
 	}
 
 	/**

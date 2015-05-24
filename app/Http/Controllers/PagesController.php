@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Team;
 
 class PagesController extends Controller {
 
@@ -21,6 +22,7 @@ class PagesController extends Controller {
 	}
     public function meet()
     {
-        return view('pages.meet');
+        $team = Team::all();
+        return view('pages.meet',compact('team'));
     }
 }

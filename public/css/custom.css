@@ -1,0 +1,29 @@
+body {
+    color: #666;
+}
+.navbar-default {
+    background-color: #269abc;
+}
+.navbar-default .navbar-brand {
+    color: #FCFB98;
+    font-size: 1.5em;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: #26addd;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+     background-color: #269abc;
+ }
+h1 {
+    border-bottom: 1px solid;
+}

@@ -61,6 +61,9 @@
     background-color: #26addd;
     border-color: #269abc;
 }
+.team {
+    text-align: center;
+}
 /* Footer */
 footer {
     padding: 20px 0;

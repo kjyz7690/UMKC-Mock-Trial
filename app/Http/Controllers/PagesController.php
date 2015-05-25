@@ -22,7 +22,9 @@ class PagesController extends Controller {
 	}
     public function meet()
     {
-        $team = Team::all();
-        return view('pages.meet',compact('team'));
+        $team = Team::orderBy('last_name')->get();
+        $rows = round($team->count()/3 + .5) ;
+        $last_row = $team->count() % 3;
+        return view('pages.meet',compact('team'), compact('rows','last_row'));
     }
 }

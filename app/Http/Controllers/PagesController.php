@@ -12,14 +12,6 @@ class PagesController extends Controller {
     {
         return view('pages.home');
     }
-	public function about()
-	{
-		return view('pages.about');
-	}
-	public function join()
-	{
-		return view('pages.join');
-	}
     public function meet()
     {
         $team = Team::orderBy('last_name')->get();

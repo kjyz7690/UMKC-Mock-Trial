@@ -21,7 +21,7 @@
 </head>
 <body>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default">
     <div class="container">
         <div class="large-header">
             <a href="home">UMKC Mock Trial</a>
@@ -35,10 +35,11 @@
             </button>
             <a class="navbar-brand" href="home">UMKC Mock Trial</a>
         </div>
+    </div>
+    <div class="container">
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ url('/home') }}">Home</a></li>
-                <li><a href="{{ url('/about') }}">About</a></li>
                 <li><a href="{{ url('/join') }}">Join</a></li>
                 <li><a href="{{ url('/meet') }}">Meet the Team</a></li>
             </ul>
@@ -47,15 +48,26 @@
 </nav>
     <div class="container">
 		@yield('content')
+        <footer class="footer">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-8">
+                    <p>Like us on Facebook:</p>
+                    <div class="fb-like" data-href="https://www.facebook.com/umkcmocktrial" data-layout="button_count"
+                         data-action="like" data-show-faces="true" data-share="true"></div>
+                </div>
+            </div>
+        </footer>
 	</div>
-    <footer>
-        <p><a href"home">UMKC Mock Trial 2015</a>.</p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
-    </footer>
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

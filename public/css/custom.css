@@ -7,6 +7,13 @@
 .jumbotron a {
     font-size: 18px;
 }
+nav {
+    margin: 0px;
+}
+.why {
+    text-align: center;
+    padding: 20px;
+}
 .large-header {
     font-size: 40px;
     font-weight: 700;
@@ -21,6 +28,12 @@
 .large-header a:hover {
     text-decoration: none;
 }
+.large-header a:focus {
+    text-decoration: none;
+}
+.navbar-header {
+    height: 0px;
+}
 .navbar-default .navbar-brand {
     font-size: 25px;
     font-weight: 400;
@@ -29,6 +42,7 @@
 }
 .navbar-default {
     background-color: #269abc;
+    border-bottom: solid 2px #1B6C84;
 }
 .navbar-default .navbar-nav > li > a {
     color: white;
@@ -64,17 +78,12 @@
 .team {
     text-align: center;
 }
-/* Footer */
-footer {
-    padding: 20px 0;
-    color: #999;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-top: 1px solid #e5e5e5;
+/* Custom page footer */
+.footer {
     margin-top: 20px;
-}
-footer p:last-child {
-    margin-bottom: 0;
+    padding-top: 20px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
 }
 @media (max-width: 1350px) {
 }
@@ -97,6 +106,9 @@ footer p:last-child {
     }
     .large-header a {
         visiblity: hidden;
+    }
+    .navbar-header {
+        height: 50px;
     }
     .navbar-default .navbar-brand {
         color: #FCEB55;

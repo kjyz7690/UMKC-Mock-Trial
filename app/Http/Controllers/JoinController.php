@@ -13,6 +13,7 @@ class JoinController extends Controller {
 	 *
 	 * @return Response
 	 */
+
 	public function index()
 	{
         return view('pages.join');

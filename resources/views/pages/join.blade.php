@@ -61,7 +61,7 @@
                     {!! Form::label('comment','Comments:') !!}
                     {!! Form::textarea('comment','Comments',['class' => 'form-control']) !!}
                 </div>
-                {!! Form::submit('Submit',['class' => 'btn btn-default']) !!}
+                {!! Form::submit('Submit',['class' => 'btn btn-primary btn-default']) !!}
             {!! Form::close() !!}
         </div>
     </div>

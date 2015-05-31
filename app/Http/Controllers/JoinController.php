@@ -3,8 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
-use App\Intersted;
+//use Illuminate\Http\Request;
+use App\Join;
+use Request;
 
 class JoinController extends Controller {
 
@@ -25,8 +26,7 @@ class JoinController extends Controller {
 	 * @return Response
 	 */
 	public function create()
-	{
-		//
+    {
 	}
 
 	/**
@@ -36,7 +36,8 @@ class JoinController extends Controller {
 	 */
 	public function store()
 	{
-		//
+        $input = new Join(Request::all());
+        $input->save();
 	}
 
 	/**
@@ -46,8 +47,7 @@ class JoinController extends Controller {
 	 * @return Response
 	 */
 	public function show($id)
-	{
-		//
+    {
 	}
 
 	/**

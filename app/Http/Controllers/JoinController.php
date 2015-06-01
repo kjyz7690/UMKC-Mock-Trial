@@ -38,6 +38,7 @@ class JoinController extends Controller {
 	{
         $input = new Join(Request::all());
         $input->save();
+        return view('pages.join');
 	}
 
 	/**

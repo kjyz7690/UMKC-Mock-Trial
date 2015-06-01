@@ -40,7 +40,7 @@
         information below and a current member will get in contact with you with shortly.</p>
     <div class="panel panel-default">
         <div class="panel-body">
-                {!! Form::open() !!}
+            {!! Form::open(array('id' => 'join')) !!}
                 <div class="form-group">
                     {!! Form::label('name','Name:') !!}
                     {!! Form::text('name', 'Name', ['class' => 'form-control']) !!}
@@ -65,4 +65,5 @@
             {!! Form::close() !!}
         </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 @stop

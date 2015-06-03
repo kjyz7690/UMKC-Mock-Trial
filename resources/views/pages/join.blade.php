@@ -40,7 +40,8 @@
         information below and a current member will get in contact with you with shortly.</p>
     <div class="panel panel-default">
         <div class="panel-body">
-            {!! Form::open(array('id' => 'join')) !!}
+            {!! Form::open(array('method' => 'post',
+                                 'id' => 'join')) !!}
                 <div class="form-group">
                     {!! Form::label('name','Name:') !!}
                     {!! Form::text('name', 'Name', ['class' => 'form-control']) !!}
@@ -66,4 +67,21 @@
         </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $('#join').submit(function(event) {
+                event.preventDefault();
+
+                var $form = $(this);
+                var data = $form.serialize();
+                alert($form.serialize());
+                var url = $form.attr('action');
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data
+                });
+            });
+        });
+    </script>
 @stop

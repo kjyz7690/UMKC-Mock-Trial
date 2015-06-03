@@ -36,9 +36,23 @@ class JoinController extends Controller {
 	 */
 	public function store()
 	{
-        $input = new Join(Request::all());
-        $input->save();
-        return view('pages.join');
+        $input = Request::all();
+
+        $join = new Join();
+
+        $join->name = $input['name'];
+        $join->phone = $input['phone'];
+        $join->email = $input['email'];
+        $join->year = $input['year'];
+        $join->comment = $input['comment'];
+        $join->save();
+
+        $response = array(
+            'status' => 'success',
+            'msg' => 'Success!'
+        );
+
+        return $response;
 	}
 
 	/**

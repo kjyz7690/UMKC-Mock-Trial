@@ -1,46 +1,56 @@
 @extends('app')
 @section('content')
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Carousel
+ ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="images/courtroom1.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
+                <img class="first-slide" src="images/courtroom1.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Join the Team</h1>
+                        <p>We are currently looking for dedicated mockers for our 2015-2016 season.</p>
+                        <p>Want to join but don't have any experience? No Problem! We will teach you everything you need to know.</p>
+                        <p><a class="btn btn-lg btn-primary" href="{{ url('/join') }}" role="button">Learn More</a></p>
+                    </div>
                 </div>
             </div>
             <div class="item">
-                <img src="images/team2.jpg"  alt="...">
-                <div class=carousel-caption">
-                    ...
+                <img class="second-slide" src="team2.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Events</h1>
+                        <p>See what our Team is going to be up to this season!</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
                 </div>
             </div>
-            ...
+            <div class="item">
+                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Meet the Team</h1>
+                        <p>Meet the dedicated students of the UMKC Mock Trial Team</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
-    <div class="jumbotron">
-        <h2>Interested In Joining?</h2>
-        <p>We are currently looking for dedicated mockers for our 2015-2016 season.</p>
-        <p>Want to join but don't have any experience? No Problem! We will teach you everything you need to know.</p>
-        <p><a class="btn btn-primary btn-lg" href="join" role="button">Learn more</a></p>
-    </div>
+    </div><!-- /.carousel -->
     <div class="container">
         <h2>Who Are We?</h2>
         <p>The UMKC Mock Trial Team is a student organization dedicated to competing in intercollegiate tournaments across the
@@ -65,7 +75,7 @@
     </div>
     <script>
         $(document).onready({
-            $('.carousel').carousel('cycle');
+            $('.carousel').carousel()
         });
     </script>
 @stop

@@ -1,74 +1,55 @@
-.jumbotron h1 {
-    font-size: 50px;
-}  
-.jumbotron p {
-    font-size: 20px; 
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
 }
-.jumbotron a {
-    font-size: 18px;
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
 }
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
 .carousel {
-    max-width: 900px;
-    max-height: 500px;
+    height: 500px;
+    margin-bottom: 60px;
 }
-nav {
-    margin: 0px;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
 }
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+/****** End Carousel ******/
 .why {
     text-align: center;
     padding: 20px;
-}
-.large-header {
-    font-size: 40px;
-    font-weight: 700;
-    color: #1B6C84;
-}
-.large-header a {
-    color: #1B6C84;
-}
-.large-header a:hover {
-    text-decoration: none;
-}
-.large-header a:focus {
-    text-decoration: none;
-}
-.navbar-header {
-    height: 0px;
-}
-.navbar-default .navbar-brand {
-    font-size: 25px;
-    font-weight: 400;
-    text-shadow: none;
-    padding: 15px;
-}
-.navbar-default {
-    background-color: #ccc;
-    background-image: url("../images/background.png");
-    border-top: solid 2px #1B6C84;
-    border-bottom: solid 2px #1B6C84;
-}
-.navbar-default .navbar-nav > li > a {
-    color: #1B6C84;
-}
-.navbar-default .navbar-brand {
-    color: #1B6C84;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-}
-.navbar-default .navbar-nav > li > a:hover {
-    color: #269abc;
-    background-color: #f0f0f0;
-}
-.navbar-default .navbar-toggle:hover {
-    background-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-     background-color: #269abc;
- }
-.navbar-default .navbar-brand {
-     color: #1B6C84;
-     visibility: hidden;
 }
 .btn-primary {
     background-color: #269abc;
@@ -76,7 +57,7 @@ nav {
 }
 .btn-primary:hover {
     background-color: #eeeeee;
-    border-color: #269;
+    border-color: #19558A;
 }
 .team {
     text-align: center;
@@ -93,15 +74,6 @@ nav {
 @media (max-width: 1200px) {
 }
 @media (max-width: 770px) {
-    .jumbotron h1 {
-        font-size: 30px;
-    }
-    .jumbotron p {
-        font-size: 16px;
-    }
-    .jumbotron a {
-        font-size: 16px;
-    }
     .large-header {
         visibility: hidden;
         height: 0px;
@@ -114,7 +86,7 @@ nav {
         height: 50px;
     }
     .navbar-default .navbar-brand {
-        color: #FCEB55;
+        color: #19558A;
         visibility: visible;
     }
 }

@@ -20,34 +20,32 @@
 	<![endif]-->
 </head>
 <body>
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">UMKC Mock Trial</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ url('/home') }}">Home</a></li>
+                        <li><a href="{{ url('/join') }}">Join</a></li>
+                        <li><a href="{{ url('/meet') }}">Meet the Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
     <div class="container-fluid">
-        <div class="large-header">
-            <a id="logo" href="home"><img src="images/Picture1.png"></a>
-            <a href="home">UMKC Mock Trial</a>
-        </div>
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="home">UMKC Mock Trial</a>
-        </div>
-    </div>
-    <div class="container">
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ url('/home') }}">Home</a></li>
-                <li><a href="{{ url('/join') }}">Join</a></li>
-                <li><a href="{{ url('/meet') }}">Meet the Team</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-    <div class="container">
 		@yield('content')
         <footer class="footer">
             <div class="row">
@@ -62,6 +60,7 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <div id="fb-root"></div>
     <script>(function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -69,6 +68,7 @@
             js = d.createElement(s); js.id = id;
             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
             fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>

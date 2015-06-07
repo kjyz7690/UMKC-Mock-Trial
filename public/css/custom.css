@@ -22,6 +22,21 @@
 .navbar-wrapper .navbar .container {
     width: auto;
 }
+.navbar-default {
+    background-color: #3E93AF;
+}
+.navbar-default .navbar-nav > li > a  {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #C5DFE7;
+}
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-brand:hover {
+    color: #C5DFE7;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */

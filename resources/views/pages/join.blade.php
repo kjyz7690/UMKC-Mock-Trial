@@ -1,7 +1,9 @@
 @extends('app')
 
 @section('content')
-    <h2>Why Should You Join?</h2>
+
+    <div class="container">
+        <h2>Why Should You Join?</h2>
     <div class="container why">
         <div class="row">
             <div class="col-lg-4">
@@ -68,6 +70,7 @@
                 {!! Form::submit('Submit',['class' => 'btn btn-primary btn-default']) !!}
             {!! Form::close() !!}
         </div>
+    </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>

@@ -21,13 +21,10 @@ nav {
 .large-header {
     font-size: 40px;
     font-weight: 700;
-    color: #FCEB55;
-    background-image: url("../images/gavel.png");
-    background-repeat: no-repeat;
-    padding: 30px;
+    color: #1B6C84;
 }
 .large-header a {
-    color: #FCEB55;
+    color: #1B6C84;
 }
 .large-header a:hover {
     text-decoration: none;
@@ -45,21 +42,23 @@ nav {
     padding: 15px;
 }
 .navbar-default {
-    background-color: #269abc;
+    background-color: #ccc;
+    background-image: url("../images/background.png");
+    border-top: solid 2px #1B6C84;
     border-bottom: solid 2px #1B6C84;
 }
 .navbar-default .navbar-nav > li > a {
-    color: white;
+    color: #1B6C84;
 }
 .navbar-default .navbar-brand {
-    color: #FCEB55;
+    color: #1B6C84;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    color: #ffffff;
-    background-color: #26addd;
+    color: #269abc;
+    background-color: #f0f0f0;
 }
 .navbar-default .navbar-toggle:hover {
     background-color: #ffffff;
@@ -68,7 +67,7 @@ nav {
      background-color: #269abc;
  }
 .navbar-default .navbar-brand {
-     color: #FCEB55;
+     color: #1B6C84;
      visibility: hidden;
 }
 .btn-primary {
@@ -76,8 +75,8 @@ nav {
     border-color: #269abc;
 }
 .btn-primary:hover {
-    background-color: #26addd;
-    border-color: #269abc;
+    background-color: #eeeeee;
+    border-color: #269;
 }
 .team {
     text-align: center;

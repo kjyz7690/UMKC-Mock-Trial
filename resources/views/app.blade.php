@@ -21,9 +21,10 @@
 </head>
 <body>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default">
-    <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
         <div class="large-header">
+            <a id="logo" href="home"><img src="images/Picture1.png"></a>
             <a href="home">UMKC Mock Trial</a>
         </div>
         <div class="navbar-header">

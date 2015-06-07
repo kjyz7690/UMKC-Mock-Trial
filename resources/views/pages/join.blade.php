@@ -39,6 +39,9 @@
     <p class="lead">Interested in joining UMKC Mock Trial team? Please enter your contact
         information below and a current member will get in contact with you with shortly.</p>
     <div class="panel panel-default">
+        <div id="response">
+
+        </div>
         <div class="panel-body">
             {!! Form::open(array('method' => 'post',
                                  'id' => 'join')) !!}
@@ -74,7 +77,6 @@
 
                 var $form = $(this);
                 var data = $form.serialize();
-                alert($form.serialize());
                 var url = $form.attr('action');
                 $.ajax({
                     type: 'POST',

@@ -7,6 +7,10 @@
 .jumbotron a {
     font-size: 18px;
 }
+.carousel {
+    max-width: 900px;
+    max-height: 500px;
+}
 nav {
     margin: 0px;
 }

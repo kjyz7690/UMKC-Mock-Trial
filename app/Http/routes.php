@@ -9,5 +9,6 @@ Route::model('team','Team');
 
 Route::get('join', 'JoinController@index');
 Route::get('join/{id}','JoinController@show');
+
 Route::model('interested','Interested');
 Route::post('join', 'JoinController@store');

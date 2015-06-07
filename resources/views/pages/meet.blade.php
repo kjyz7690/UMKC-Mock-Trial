@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+    <div class="container">
     <h2>Meet the Team</h2>
     @for ($i = 0; $i < $rows - 1; $i++)
         <div class="row">
@@ -26,4 +27,5 @@
             </div>
         </div>
     @endif
+    </div>
 @stop

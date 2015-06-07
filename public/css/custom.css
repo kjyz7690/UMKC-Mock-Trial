@@ -23,13 +23,18 @@
     width: auto;
 }
 .navbar-default {
-    background-color: #3E93AF;
+    background-color: #269abc;
 }
 .navbar-default .navbar-nav > li > a  {
     color: #FFFFFF;
 }
 .navbar-default .navbar-nav > li > a:hover {
-    color: #C5DFE7;
+     color: #269abc;
+     background-color:#eeeeee;
+}
+.navbar-default .navbar-nav > li > a:active {
+    color: #269abc;
+    background-color:#ffffff;
 }
 .navbar-default .navbar-brand {
     color: #FFFFFF;

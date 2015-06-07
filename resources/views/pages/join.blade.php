@@ -3,36 +3,6 @@
 @section('content')
 
     <div class="container">
-        <h2>Why Should You Join?</h2>
-    <div class="container why">
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="img-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h4>Have Fun</h4>
-                <p>
-                    The UMKC Mock Trial Team is a great way to get involved on campus! The team works hard but they play hard too.
-                    It’s not unusual to see this group  out on team dinners or at other social events that are a lot of fun.
-                    If you’re looking to join an organization that you will truly enjoy look no further!
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="img-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h4>Gain Valuable Skills</h4>
-                <p>
-                    There are lots of things you can learn by joining the UMKC Mock Trial Team.  From learning how to give effective
-                    speeches to building your acting skills, this program will teach you.
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="img-circle" src="#" alt="Generic placeholder image" width="140" height="140">
-                <h4>Travel</h4>
-                <p>
-                    Do you like to travel? So do we! As a member of the UMKC Mock Trial Team you will have to opportunity to travel
-                    across the country competing against different universities.
-                </p>
-            </div>
-        </div>
-    </div>
     <h2>Who Are We looking for?</h2>
         <p>We are looking for UMKC pre-law students, engineering students, theater students, and everyone in between! We strive to have
             a diverse group of students from various academic backgrounds. We are just looking for students who will be dedicated,

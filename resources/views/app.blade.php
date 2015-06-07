@@ -32,11 +32,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">UMKC Mock Trial</a>
+                    <a class="navbar-brand" href="{{ url('/home') }}">UMKC Mock Trial</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="{{ url('/home') }}">Home</a></li>
+                        <li><a href="{{ url('/home') }}">Home</a></li>
                         <li><a href="{{ url('/join') }}">Join</a></li>
                         <li><a href="{{ url('/meet') }}">Meet the Team</a></li>
                     </ul>
